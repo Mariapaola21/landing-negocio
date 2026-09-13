@@ -6,8 +6,6 @@ Registro diario de aprendizaje y construcción. Sprint 01 — Fundación CEPAV.
 Día 1 — 11/09/2026
 
 Horas efectivas: 2 h (práctica: 1 · teoría: 1 · coach: 0)
-
-
 ¿Qué estudié?
 - Lectura y comprensión del Sprint 01 y la Rúbrica de evaluación.
 - Lectura de la Historia de Usuario asignada: HU-S01-02 (Landing page para un negocio de barrio).
