@@ -7,182 +7,336 @@
     <meta name="description"
         content="Taller de ebanistería y carpintería en Turbo con envíos a Medellín. Especialistas en madera RH, cocinas, cabañas e iglesias.">
     <title>Taller de Ebanistería y Carpintería — Muebles a Medida y Madera RH</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
     <!-- ENCABEZADO Y NAVEGACIÓN -->
-    <header>
-        <nav aria-label="Navegación principal">
-            <a href="#inicio"><strong>Taller de Ebanistería</strong></a>
-            <ul>
+    <header class="main-header">
+        <nav aria-label="Navegación principal" class="navbar">
+            <a href="#inicio" class="logo">
+                <svg class="logo-icon-svg" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#D9822B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 21h18"/>
+                    <path d="M5 21V9l7-5 7 5v12"/>
+                    <path d="M9 21v-6a3 3 0 0 1 6 0v6"/>
+                </svg>
+                <strong>Ebanistería La Canopia</strong>
+            </a>
+            <ul class="nav-links">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#horarios">Horarios</a></li>
                 <li><a href="#faq">Preguntas</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#servicios" class="btn-nav">Ver Servicios</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="inicio">
 
-        <!-- SECCIÓN HERO (PORTADA) -->
-        <section id="hero" aria-labelledby="titulo-principal">
-            <h1 id="titulo-principal">Ebanistería y Carpintería de Alta Calidad en Turbo</h1>
-            <p>Especialistas en <strong>madera maciza y tableros RH (Resistentes a la Humedad)</strong> para cocinas,
-                clósets, cabañas turísticas y proyectos institucionales. Cobertura local y envíos a Medellín.</p>
-            <a href="https://wa.me/573000000000?text=Hola,%20quiero%20cotizar%20un%20proyecto%20en%20madera"
-                target="_blank" rel="noopener noreferrer">
-                📲 Cotizar por WhatsApp
-            </a>
+        <!-- SECCIÓN DE PORTADA -->
+        <section id="hero" class="hero-section" aria-labelledby="titulo-principal">
+            <div class="hero-content">
+                <span class="hero-badge">TALLER ARTESANAL & CARPINTERÍA DE ALTA RESISTENCIA - Hecho en Turbo para Urabá y Medellín.</span>
+                <h1 id="titulo-principal">Ebanistería y Carpintería de Alta Calidad en Turbo</h1>
+                <p class="hero-text">
+                    Especialistas en <strong>madera maciza y tableros RH (Resistentes a la Humedad)</strong> para cocinas,
+                    clósets, cabañas turísticas y proyectos institucionales. Cobertura local en Urabá y envíos a Medellín.
+                </p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/573000000000?text=Hola,%20quiero%20cotizar%20un%20proyecto%20en%20madera"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Cotizar por WhatsApp
+                    </a>
+                    <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCIÓN DE PRODUCTOS Y SERVICIOS (MÍNIMO 6 ÍTEMS) -->
-        <section id="servicios" aria-labelledby="titulo-servicios">
-            <h2 id="titulo-servicios">Nuestros Servicios y Especialidades</h2>
-            <p>Fabricamos a la medida exacta de tu espacio y con materiales garantizados contra la humedad.</p>
+        <!-- SECCIÓN DE PRODUCTOS Y SERVICIOS -->
+        <section id="servicios" class="services-section" aria-labelledby="titulo-servicios">
+            <div class="section-header">
+                <h2 id="titulo-servicios">Nuestros Servicios y Especialidades</h2>
+                <p>Fabricamos a la medida exacta de tu espacio y con materiales garantizados contra la humedad.</p>
+            </div>
 
-            <article>
-                <h3>1. Cocinas Integrales en Madera RH</h3>
-                <p>Diseño y fabricación de muebles de cocina en tableros RH de alta densidad, resistentes al agua,
-                    vapores y grasa.</p>
-                <p><strong>Precio:</strong> Cotización según medidas y acabados.</p>
-            </article>
+            <div class="carousel-wrapper">
+                <button type="button" class="carousel-control prev" aria-label="Ver servicio anterior" onclick="document.querySelector('.services-grid').scrollBy({left: -360, behavior: 'smooth'})">‹</button>
 
-            <article>
-                <h3>2. Clósets y Vestieres a Medida</h3>
-                <p>Aprovechamiento máximo del espacio con cajoneras reforzadas, zapateros y divisiones personalizadas.
-                </p>
-                <p><strong>Precio:</strong> Cotización personalizada.</p>
-            </article>
+                <div class="services-grid" tabindex="0" aria-label="Carrusel de productos y servicios">
+                    <article id="servicio-1" class="card" tabindex="0">
+                        <figure class="card-figure">
+                            <img src="img/proyecto_cocina_azul.png" alt="Cocina integral moderna en acabado azul mediterráneo RH con gabinete superior y campana extractora" class="card-img" width="400" height="300">
+                        </figure>
+                        <div class="card-header">
+                            <span class="badge badge-rh">Especialidad RH</span>
+                            <h3>1. Cocina Integral Azul Mediterráneo RH</h3>
+                        </div>
+                        <p>Fabricación a medida en tableros RH hidrófugos de alta resistencia a la humedad con puertas de marco biselado.</p>
+                        <div class="card-footer">
+                            <p class="price-tag"><strong>Precio:</strong> Cotización según medidas y accesorios.</p>
+                            <a href="https://wa.me/573245875446?text=Hola,%20deseo%20cotizar%20una%20Cocina%20Integral%20Azul%20RH" 
+                               class="card-link" target="_blank" rel="noopener noreferrer">Cotizar Cocina Azul →</a>
+                        </div>
+                    </article>
 
-            <article>
-                <h3>3. Muebles para Baños con Protección RH</h3>
-                <p>Muebles flotantes y cajoneras bajo lavamanos con sellado hermético especial para ambientes húmedos.
-                </p>
-                <p><strong>Precio:</strong> Desde cotización base.</p>
-            </article>
+                    <article id="servicio-2" class="card" tabindex="0">
+                        <figure class="card-figure">
+                            <img src="img/proyecto_credenza.png" alt="Mueble librero y credenza flotante modular de diseño moderno en tonos neutros con iluminación cálida" class="card-img" width="400" height="300">
+                        </figure>
+                        <div class="card-header">
+                            <span class="badge badge-custom">A Medida</span>
+                            <h3>2. Credenza & Estantería Arquitectónica</h3>
+                        </div>
+                        <p>Mueble de almacenamiento modular de piso a techo con nichos abiertos, iluminación LED indirecta y credenza inferior.</p>
+                        <div class="card-footer">
+                            <p class="price-tag"><strong>Precio:</strong> Cotización personalizada.</p>
+                            <a href="https://wa.me/573245875446?text=Hola,%20deseo%20cotizar%20una%20Credenza%20o%20Estantería%20Arquitectónica" 
+                               class="card-link" target="_blank" rel="noopener noreferrer">Cotizar Credenza →</a>
+                        </div>
+                    </article>
 
-            <article>
-                <h3>4. Mobiliario para Cabañas y Fincas Turísticas</h3>
-                <p>Camas rústicas, comedores macizos y acabados resistentes al clima tropical y uso continuo.</p>
-                <p><strong>Precio:</strong> Cotización por proyecto o volumen.</p>
-            </article>
+                    <article id="servicio-3" class="card" tabindex="0">
+                        <figure class="card-figure">
+                            <img src="img/proyecto_cocina_negra.png" alt="Cocina de lujo en acabado negro alto brillo con cubierta de granito y nicho especial para electrodomésticos" class="card-img" width="400" height="300">
+                        </figure>
+                        <div class="card-header">
+                            <span class="badge badge-wood">Lujo & RH</span>
+                            <h3>3. Cocina de Lujo Negro Alto Brillo</h3>
+                        </div>
+                        <p>Elegante diseño moderno con puertas acrílicas de alto brillo, mesón en granito pulido e isla de servicio.</p>
+                        <div class="card-footer">
+                            <p class="price-tag"><strong>Precio:</strong> Cotización por metraje.</p>
+                            <a href="https://wa.me/573245875446?text=Hola,%20deseo%20cotizar%20una%20Cocina%20Negra%20Alto%20Brillo" 
+                               class="card-link" target="_blank" rel="noopener noreferrer">Cotizar Cocina Negra →</a>
+                        </div>
+                    </article>
 
-            <article>
-                <h3>5. Proyectos Institucionales e Iglesias</h3>
-                <p>Fabricación de bancas talladas, altares, confesionarios y puertas principales en maderas nobles.</p>
-                <p><strong>Precio:</strong> Contratos por volumen y medidas especiales.</p>
-            </article>
+                    <article id="servicio-4" class="card" tabindex="0">
+                        <figure class="card-figure">
+                            <img src="img/proyecto_puertas.png" alt="Pareja de puertas entableradas en madera maciza de caoba con barniz transparente de alto brillo" class="card-img" width="400" height="300">
+                        </figure>
+                        <div class="card-header">
+                            <span class="badge badge-wood">Madera Maciza</span>
+                            <h3>4. Puertas Entableradas en Caoba Maciza</h3>
+                        </div>
+                        <p>Puertas principales e interiores elaboradas en madera noble sellada contra termitas y humedad costera.</p>
+                        <div class="card-footer">
+                            <p class="price-tag"><strong>Precio:</strong> Cotización por unidad o lote.</p>
+                            <a href="https://wa.me/573245875446?text=Hola,%20deseo%20cotizar%20Puertas%20en%20Madera%20Maciza" 
+                               class="card-link" target="_blank" rel="noopener noreferrer">Cotizar Puertas →</a>
+                        </div>
+                    </article>
 
-            <article>
-                <h3>6. Acabados de Carpintería para Edificios</h3>
-                <p>Instalación de puertas de entrada, marcos, zócalos y detalles arquitectónicos en madera para
-                    constructoras.</p>
-                <p><strong>Precio:</strong> Por metraje o bloque de obra.</p>
-            </article>
+                    <article id="servicio-5" class="card" tabindex="0">
+                        <figure class="card-figure">
+                            <img src="img/proyecto_closet_escritorio.png" alt="Mueble integral de alcoba con clóset de dos puertas, vitrina de exhibición, cajones y escritorio integrado" class="card-img" width="400" height="300">
+                        </figure>
+                        <div class="card-header">
+                            <span class="badge badge-custom">Multifuncional</span>
+                            <h3>5. Mueble Integral: Clóset, Vitrina & Escritorio</h3>
+                        </div>
+                        <p>Solución completa para dormitorios que integra armario principal, módulo exhibidor en cristal y zona de estudio.</p>
+                        <div class="card-footer">
+                            <p class="price-tag"><strong>Precio:</strong> Cotización según dimensiones.</p>
+                            <a href="https://wa.me/573245875446?text=Hola,%20deseo%20cotizar%20un%20Mueble%20Integral%20con%20Clóset%20y%20Escritorio" 
+                               class="card-link" target="_blank" rel="noopener noreferrer">Cotizar Mueble Integral →</a>
+                        </div>
+                    </article>
+
+                    <article id="servicio-6" class="card" tabindex="0">
+                        <figure class="card-figure">
+                            <img src="img/proyecto_bano_rh.png" alt="Mueble flotante de baño en acabado blanco RH con lavamanos de sobreponer, cubierta de cuarzo y espejo flotante decorativo" class="card-img" width="400" height="300">
+                        </figure>
+                        <div class="card-header">
+                            <span class="badge badge-rh">Protección RH</span>
+                            <h3>6. Mueble de Baño Flotante RH</h3>
+                        </div>
+                        <p>Vanitorio suspendido en material RH con cajones amplios de herrajes cromados, lavamanos de sobreponer y espejo flotante a juego.</p>
+                        <div class="card-footer">
+                            <p class="price-tag"><strong>Precio:</strong> Cotización a medida.</p>
+                            <a href="https://wa.me/573245875446?text=Hola,%20deseo%20cotizar%20un%20Mueble%20de%20Baño%20Flotante%20RH" 
+                               class="card-link" target="_blank" rel="noopener noreferrer">Cotizar Mueble Baño →</a>
+                        </div>
+                    </article>
+                </div>
+
+                <button type="button" class="carousel-control next" aria-label="Ver siguiente servicio" onclick="document.querySelector('.services-grid').scrollBy({left: 360, behavior: 'smooth'})">›</button>
+            </div>
         </section>
 
-        <!-- SECCIÓN SOBRE EL TALLER / HISTORIA -->
-        <section id="nosotros" aria-labelledby="titulo-nosotros">
-            <h2 id="titulo-nosotros">Sobre Nuestro Taller</h2>
-            <p>Somos un taller familiar de carpintería y ebanistería ubicado en <strong>Turbo, Antioquia</strong>. Nos
-                apasiona la transformación de la madera y nos hemos especializado en el uso de materiales de alta
-                durabilidad como el <strong>aglomerado RH</strong>, ideal para resistir la humedad del clima costero y
-                tropical.</p>
-            <p>Nuestra experiencia abarca desde el mueble detallado para el hogar hasta proyectos de gran escala para
-                iglesias y fincas turísticas en la región y envíos hacia Medellín.</p>
+        <!-- SECCIÓN SOBRE EL TALLER -->
+        <section id="nosotros" class="about-section" aria-labelledby="titulo-nosotros">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2 id="titulo-nosotros">Sobre Nuestro Taller</h2>
+                    <p>Somos un taller familiar de carpintería y ebanistería ubicado en <strong>Turbo, Antioquia</strong>. Nos
+                        apasiona la transformación de la madera y nos hemos especializado en el uso de materiales de alta
+                        durabilidad como el <strong>aglomerado RH</strong>, ideal para resistir la humedad del clima costero y
+                        tropical.</p>
+                    <p>Nuestra experiencia abarca desde el mueble detallado para el hogar hasta proyectos de gran escala para
+                        iglesias y fincas turísticas en la región y envíos hacia Medellín.</p>
+                </div>
+                <div class="about-card" tabindex="0" aria-label="Garantía de Calidad Canopia">
+                    <h3>Garantía de Calidad Canopia</h3>
+                    <ul>
+                        <li>✓ Resistencia total a la humedad costera</li>
+                        <li>✓ Corte computarizado y ensamble reforzado</li>
+                        <li>✓ Envíos y montajes a Medellín y Urabá</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <!-- SECCIÓN HORARIOS Y UBICACIÓN -->
-        <section id="horarios" aria-labelledby="titulo-horarios">
-            <h2 id="titulo-horarios">Horarios de Atención y Cobertura</h2>
-            <table border="1">
-                <caption>Horario de atención en taller y recepción de cotizaciones</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Día</th>
-                        <th scope="col">Horario de Atención</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes a Viernes</td>
-                        <td>7:30 a.m. – 5:30 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td>Sábados</td>
-                        <td>8:00 a.m. – 1:00 p.m.</td>
-                    </tr>
-                    <tr>
-                        <td>Domingos y Festivos</td>
-                        <td>Cerrado (Atención solo WhatsApp)</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><strong>Ubicación:</strong> Turbo, Antioquia. Despachos y montajes disponibles en toda la región y
-                Medellín.</p>
+        <section id="horarios" class="schedule-section" aria-labelledby="titulo-horarios">
+            <div class="section-header">
+                <h2 id="titulo-horarios">Horarios de Atención y Cobertura</h2>
+            </div>
+
+            <div class="table-responsive" tabindex="0" aria-label="Tabla de horarios de atención y cobertura">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Día de la Semana</th>
+                            <th scope="col">Horario en Taller</th>
+                            <th scope="col">Estado de Atención</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Lunes a Viernes</strong></td>
+                            <td>7:30 a.m. – 5:30 p.m.</td>
+                            <td><span class="status-badge status-open">🟢 Jornada Continua</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sábados</strong></td>
+                            <td>8:00 a.m. – 1:00 p.m.</td>
+                            <td><span class="status-badge status-open">🟢 Media Jornada</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Domingos y Festivos</strong></td>
+                            <td>Taller Cerrado</td>
+                            <td><span class="status-badge status-wa">📱 Atención WhatsApp</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="location-card" tabindex="0" aria-label="Ubicación y Cobertura de Envíos">
+                <div class="location-icon">📍</div>
+                <div class="location-text">
+                    <h3>Ubicación & Cobertura de Envíos</h3>
+                    <p><strong>Taller Principal:</strong> Turbo, Antioquia, Colombia.</p>
+                    <p><strong>Zonas de Despacho:</strong> Cobertura directa en Urabá y envíos con montaje hacia Medellín y alrededores.</p>
+                </div>
+            </div>
         </section>
 
-        <!-- SECCIÓN PREGUNTAS FRECUENTES (FAQ - MÍNIMO 5) -->
-        <section id="faq" aria-labelledby="titulo-faq">
+        <!-- SECCIÓN PREGUNTAS FRECUENTES  -->
+        <section id="faq" class="faq-section" aria-labelledby="titulo-faq">
             <h2 id="titulo-faq">Preguntas Frecuentes</h2>
 
-            <details>
-                <summary><strong>¿Qué es la madera RH y por qué la recomiendan?</strong></summary>
-                <p>RH significa "Resistente a la Humedad". Son tableros tratados con resinas especiales de color verde
-                    interno que evitan que el mueble se hinche, se pudra o cree hongos por contacto con agua o vapor.
-                </p>
-            </details>
+            <div class="faq-container">
+                <details class="faq-item" tabindex="0">
+                    <summary><strong>¿Hacen envíos de muebles a Medellín u otros municipios?</strong></summary>
+                    <p>Sí, despachamos muebles empacados y protegidos desde nuestro taller en Turbo hacia Medellín, la subregión del Urabá y zonas aledañas.</p>
+                </details>
 
-            <details>
-                <summary><strong>¿Hacen envíos o instalaciones fuera de Turbo o en Medellín?</strong></summary>
-                <p>Sí, coordinamos la fabricación y el envío con transporte seguro para proyectos en Medellín, fincas y
-                    municipios cercanos.</p>
-            </details>
+                <details class="faq-item" tabindex="0">
+                    <summary><strong>¿Qué ventajas tiene el material RH sobre la madera tradicional?</strong></summary>
+                    <p>El aglomerado RH (Resistente a la Humedad) cuenta con resinas especiales que evitan la hinchazón y el deterioro por vapores o agua en cocinas y baños.</p>
+                </details>
 
-            <details>
-                <summary><strong>¿Cómo solicito una cotización?</strong></summary>
-                <p>Solo haz clic en el botón de WhatsApp, envíanos las medidas aproximadas o una foto de referencia y te
-                    responderemos con el presupuesto sin costo.</p>
-            </details>
+                <details class="faq-item" tabindex="0">
+                    <summary><strong>¿Puedo solicitar una visita a domicilio para tomar medidas?</strong></summary>
+                    <p>¡Por supuesto! Para proyectos de cocina, clósets u obras en Urabá realizamos visitas de rectificación de medidas antes de fabricar.</p>
+                </details>
 
-            <details>
-                <summary><strong>¿Qué garantía tienen los muebles fabricados?</strong></summary>
-                <p>Ofrecemos garantía directa por defectos de fabricación y ensamblaje, respaldando la calidad de los
-                    herrajes y maderas utilizadas.</p>
-            </details>
+                <details class="faq-item" tabindex="0">
+                    <summary><strong>¿Qué garantía tienen los muebles fabricados?</strong></summary>
+                    <p>Ofrecemos garantía directa por defectos de fabricación y ensamblaje, respaldando la calidad de los herrajes y maderas utilizadas.</p>
+                </details>
 
-            <details>
-                <summary><strong>¿Cuánto tiempo tarda la entrega de una cocina o clóset?</strong></summary>
-                <p>El tiempo promedio es de 10 a 20 días hábiles dependiendo de la complejidad del diseño y el volumen
-                    de la obra.</p>
-            </details>
+                <details class="faq-item" tabindex="0">
+                    <summary><strong>¿Cuánto tiempo tarda la entrega de una cocina o clóset?</strong></summary>
+                    <p>El tiempo promedio es de 10 a 20 días hábiles dependiendo de la complejidad del diseño y el volumen de la obra.</p>
+                </details>
+            </div>
         </section>
 
         <!-- SECCIÓN CONTACTO -->
-        <section id="contacto" aria-labelledby="titulo-contacto">
-            <h2 id="titulo-contacto">Ponte en Contacto</h2>
-            <p>¿Tienes una idea en mente o necesitas cotizar para tu casa, iglesia o cabaña? Habla directamente con
-                nosotros:</p>
-            <p>
-                <a href="https://wa.me/573000000000?text=Hola,%20estoy%20interesado%20en%20una%20cotizacion"
-                    target="_blank" rel="noopener noreferrer">
-                    <strong>Escríbenos directamente al WhatsApp</strong>
-                </a>
-            </p>
-            <p><strong>Teléfono:</strong> +57 300 000 0000</p>
-            <p><strong>Ubicación:</strong> Turbo, Antioquia, Colombia</p>
+        <section id="contacto" class="contact-section" aria-labelledby="titulo-contacto">
+            <div class="contact-card" tabindex="0" aria-label="Información y botones de contacto">
+                <span class="contact-badge">Atención Directa al Cliente</span>
+                <h2 id="titulo-contacto">Ponte en Contacto con Nuestro Taller</h2>
+                <p class="contact-subtitle">¿Tienes una idea en mente o necesitas cotizar para tu casa, iglesia, cabaña o proyecto? Habla directamente con la administradora de nuestro taller:</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info-item" tabindex="0" aria-label="Teléfono directo de contacto">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D9822B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info-text">
+                            <strong>Teléfono Directo:</strong>
+                            <a href="tel:+573245875446" class="contact-phone-link">+57 324 587 5446</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-item" tabindex="0" aria-label="Ubicación del taller">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D9822B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-info-text">
+                            <strong>Ubicación Taller:</strong>
+                            <span>Turbo, Antioquia, Colombia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-cta">
+                    <a href="https://wa.me/573245875446?text=Hola,%20estoy%20interesado%20en%20una%20cotizacion"
+                        target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                        </svg>
+                        Escríbenos directamente al WhatsApp
+                    </a>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <!-- PIE DE PÁGINA -->
-    <footer>
-        <p>&copy; 2026 Taller de Ebanistería y Carpintería. Todos los derechos reservados.</p>
+    <footer class="main-footer" tabindex="0" aria-label="Pie de página de Ebanistería La Canopia">
+        <p>&copy; 2026 Ebanistería La Canopia — Taller de Ebanistería y Carpintería. Todos los derechos reservados.</p>
         <p>Sitio web creado para el programa Impulso Digital — Fundación CEPAV.</p>
     </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/573245875448?text=Hola,%20quiero%20cotizar%20un%20proyecto%20en%20madera"
+        target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.105 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+    </a>
 
 </body>
 

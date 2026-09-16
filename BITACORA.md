@@ -138,3 +138,29 @@ No la use
 
 **Mañana arranco por**
 - Día 6: Bloque E (HTML y CSS), creación de `styles.css`, paleta de colores y layout con Flexbox.
+
+
+
+
+## Día 6 — 15/09/2026
+
+**Horas efectivas:** 4 h (práctica: 3 · teoría: 0.5 · coach: 0.5)
+
+**Qué estudié**
+- **Bloque E:** Box Model (`box-sizing: border-box`), selectores CSS, variables `:root`, propiedades de Flexbox (`display: flex`, `flex-wrap`, `gap`, `justify-content`) y micro-animaciones con `transition` y `@keyframes`.
+
+**Qué construí**
+- Maquetación visual completa en `styles.css` con paleta de colores inspirada en madera maciza y material RH.
+- Integración de imágenes reales de proyectos (`img/`) con etiquetas semánticas y `alt` accesible.
+- Carrusel y tarjetas de servicios con efectos hover y botón flotante de WhatsApp.
+
+**En qué me atasqué y cómo salí**
+- Dudas sobre el uso de clases y etiquetas semánticas; resuelto validando que el HTML mantenga etiquetas semánticas puras (`<article>`, `<section>`, `<header>`).
+
+**Uso de IA hoy**
+ Buenas prácticas de accesibilidad con aria-label en botones SVG lo implemente.
+
+**Lo que hoy no entendí y voy a llevar a la mentoría**
+-nada 
+**Mañana arranco por**
+- Día 7: Responsive design completo, pruebas de 320px a 1440px y verificación de cero scroll horizontal.
