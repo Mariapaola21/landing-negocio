@@ -29,6 +29,15 @@
                 </svg>
                 <strong>Ebanistería La Canopia</strong>
             </a>
+
+            <!-- Checkbox e icono de hamburguesa (CSS Puro y Accesible por Teclado) -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox" aria-label="Abrir o cerrar menú de navegación">
+            <label for="menu-toggle" class="menu-toggle-label" title="Menú de navegación">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </label>
+
             <ul class="nav-links">
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
@@ -45,7 +54,7 @@
         <!-- SECCIÓN DE PORTADA -->
         <section id="hero" class="hero-section" aria-labelledby="titulo-principal">
             <div class="hero-content">
-                <span class="hero-badge">TALLER ARTESANAL & CARPINTERÍA DE ALTA RESISTENCIA - Hecho en Turbo para Urabá y Medellín.</span>
+                <span class="hero-badge">TALLER DE CARPINTERÍA - ALTA RESISTENCIA </span>
                 <h1 id="titulo-principal">Ebanistería y Carpintería de Alta Calidad en Turbo</h1>
                 <p class="hero-text">
                     Especialistas en <strong>madera maciza y tableros RH (Resistentes a la Humedad)</strong> para cocinas,
@@ -216,19 +225,19 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td><strong>Lunes a Viernes</strong></td>
-                            <td>7:30 a.m. – 5:30 p.m.</td>
-                            <td><span class="status-badge status-open">🟢 Jornada Continua</span></td>
+                            <td data-label="Día"><strong>Lunes a Viernes</strong></td>
+                            <td data-label="Horario">7:30 a.m. – 5:30 p.m.</td>
+                            <td data-label="Estado"><span class="status-badge status-open">🟢 Jornada Continua</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Sábados</strong></td>
-                            <td>8:00 a.m. – 1:00 p.m.</td>
-                            <td><span class="status-badge status-open">🟢 Media Jornada</span></td>
+                            <td data-label="Día"><strong>Sábados</strong></td>
+                            <td data-label="Horario">8:00 a.m. – 1:00 p.m.</td>
+                            <td data-label="Estado"><span class="status-badge status-open">🟢 Media Jornada</span></td>
                         </tr>
                         <tr>
-                            <td><strong>Domingos y Festivos</strong></td>
-                            <td>Taller Cerrado</td>
-                            <td><span class="status-badge status-wa">📱 Atención WhatsApp</span></td>
+                            <td data-label="Día"><strong>Domingos y Festivos</strong></td>
+                            <td data-label="Horario">Taller Cerrado</td>
+                            <td data-label="Estado"><span class="status-badge status-wa">📱 Atención WhatsApp</span></td>
                         </tr>
                     </tbody>
                 </table>

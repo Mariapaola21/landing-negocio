@@ -164,3 +164,42 @@ No la use
 -nada 
 **Mañana arranco por**
 - Día 7: Responsive design completo, pruebas de 320px a 1440px y verificación de cero scroll horizontal.
+
+
+
+---
+
+## Día 7 — 16 de septiembre de 2026
+
+**Horas efectivas:** 4 h (práctica: 2.5 · teoría: 1.0 · coach: 0.5)
+
+**Qué estudié**
+- Flexbox en profundidad: ejes (`main axis` vs `cross axis`), alineación (`justify-content` vs `align-items`), `flex-direction`, `flex-wrap` y `gap`.
+- Modelo de caja (*Box Model*): diferencias entre `padding`, `border`, `margin` y la importancia de `box-sizing: border-box;`.
+- Estrategia *Mobile First*: estructura de media queries con `min-width` para adaptación progresiva de pantallas.
+- Accesibilidad en menús CSS puro: control de visibilidad y foco de teclado con `:focus-visible` (RC-9).
+
+**Qué construí**
+- Creación de `investigacion/entrevista.md` con la transcripción de las 10 preguntas obligatorias y enlace a la evidencia de grabación en Google Drive (CA-1, CA-2).
+- Actualización de `NEGOCIO.md` con la sección formal de Autorización y Consentimiento (CA-3) y la cotización real de hosting/dominio en ColombiaHosting ($207.000 COP anuales con IVA) (CA-14).
+- Implementación de menú hamburguesa accesible con CSS puro sin JavaScript, navegable 100% con teclado (`Tab` y `Espacio`) y foco visible (RC-9).
+- Pruebas piloto responsive con simulador y DevTools: verificación de cero scroll horizontal en 320px (RC-7) y ajuste de etiquetas en la tabla de horarios para evitar desbordes.
+
+**En qué me atasqué y cómo salí**
+- El menú hamburguesa con checkbox no recibía el foco con la tecla Tab al estar con `display: none`. Se solucionó posicionando el input de forma accesible con opacidad cero para mantener la navegabilidad por teclado.
+- Desborde de etiquetas de estado en la tabla de horarios en pantallas angostas. Se corrigió aplicando `flex-wrap: wrap` y ajustando el padding de los badges.
+
+**Uso de IA hoy**
+| Qué pregunté | Qué hice con la respuesta | ¿Entendí lo que quedó en mi código? |
+
+| Requisitos de consentimiento y cotización para `NEGOCIO.md` | Estructuré el archivo con el consentimiento (CA-3) y el análisis de costos en ColombiaHosting (CA-14) | Sí, entendí por qué va cada sección |
+
+| Como es la mejor manera de crear la Accesibilidad de menú hamburguesa con teclado | Implementé `:focus-visible` y el checkbox accesible en CSS | Sí, comprobé la navegación con la tecla Tab |
+| Diferencias entre `justify-content` y `align-items` | Realicé simulacro de preguntas y comprendí el flujo de los ejes | Sí, totalmente claro |
+
+**Lo que hoy no entendí y voy a llevar a la mentoría**
+- Ningún bloqueo crítico hoy. Tengo claros los conceptos de Flexbox y Mobile First.
+
+**Mañana arranco por**
+- Día 8: Creación de la página `galeria.html` (mínimo 6 imágenes optimizadas bajo 150 KB con `loading="lazy"` y atributos `alt` descriptivos - CA-10).
+- Realizar el Peer Review del repositorio del Estudiante 3 (HU-S01-03).
