@@ -167,7 +167,7 @@ No la use
 
 
 
----
+
 
 ## Día 7 — 16 de septiembre de 2026
 
@@ -203,3 +203,63 @@ No la use
 **Mañana arranco por**
 - Día 8: Creación de la página `galeria.html` (mínimo 6 imágenes optimizadas bajo 150 KB con `loading="lazy"` y atributos `alt` descriptivos - CA-10).
 - Realizar el Peer Review del repositorio del Estudiante 3 (HU-S01-03).
+
+
+
+
+## Día 8 — 17 de Septiembre de 2026
+
+**Horas efectivas:** 3.5 h (práctica: 2.5 h · teoría: 0.5 h · coach: 0.5 h)
+
+**Qué estudié**
+- Accesibilidad web (WCAG, atributos `alt`, contraste de color, navegación por teclado con `:focus-visible` y `outline-offset`).
+- Buenas prácticas para realizar Peer Review y dar retroalimentación constructiva sobre el código de otros desarrolladores.
+
+**Qué construí**
+- Revisión completa del repositorio de mi compañero asignado (HU-S01-03).
+- 5 comentarios útiles directamente en las líneas de código de su repositorio en GitHub.
+- Resumen completo del Peer Review publicado como comentario en su Issue de GitHub.
+
+**En qué me atasqué y cómo salí**
+- Al principio no sabía exactamente cómo dejar comentarios en líneas específicas de GitHub, pero aprendí a usar el botón `+` en la vista de archivos y diffs.
+
+**Uso de IA hoy**
+sugerencias para revisar accesibilidad, CSS y HTML semántico de mi compañero.
+como reducir codigo CSS para que no se vea tan grande.
+
+
+**Lo que hoy no entendí y voy a llevar a la mentoría**
+nada
+
+**Mañana arranco por**
+- Publicar la versión final del sitio en GitHub Pages y realizar las validaciones de W3C y Lighthouse. 
+
+
+
+## Día 9 — 18 de Septiembre de 2026
+
+**Horas efectivas:** 3 h (práctica: 2 h · teoría: 0.5 h · coach: 0.5 h)
+
+**Qué estudié**
+- Publicación de sitios web estáticos mediante GitHub Pages y configuración de HTTPS.
+- Validación de sintaxis HTML y CSS con las herramientas oficiales del W3C.
+- Auditorías de rendimiento, accesibilidad y buenas prácticas utilizando Chrome DevTools y Lighthouse.
+
+**Qué construí**
+- Despliegue en vivo del proyecto en GitHub Pages (`https://mariapaola21.github.io/landing-negocio/`).
+- Validación exitosa en el W3C Nu Html Checker sin ningún error en las páginas del sitio.
+- Ejecución de la auditoría de Lighthouse en modo móvil logrando puntajes ≥ 90 en Accesibilidad y Buenas Prácticas.
+
+**En qué me atasqué y cómo salí**
+- Dudaba de si las advertencias (warnings) del W3C afectaban la calificación, pero verifiqué que no son errores críticos que rompan la validación.
+
+**Uso de IA hoy**
+Pasos para publicar en GitHub Pages y ejecutar la auditoría de Lighthouse | Seguí los pasos de configuración en GitHub Settings y corrí las pruebas en Chrome DevTools
+descargue una extension tambien en google chrome.
+
+**Lo que hoy no entendí y voy a llevar a la mentoría**
+- en las pruebas de auditorias que hize en showdow me salio todo bien pero con advertencias no se si corregirlas.
+
+**Mañana arranco por**
+- Preparar la Agenda de Mentoría 2 (Día 10) y afinar detalles antes del congelamiento de código.
+
