@@ -6,6 +6,7 @@
 * **Entrevistada:** Administradora del taller.
 * **Evidencia de entrevista:** 
  [Ver Entrevista (Drive)](https://drive.google.com/drive/folders/1pJTLkPXHuUeEJ2c4Ge-KmyavcD0GHD6I)
+ 
 * **Qué hace el taller:** Fabricación a medida de carpintería y ebanistería en general, con fuerte especialidad en madera y tableros aglomerados RH para cocinas, baños y clósets de alta duración. Atienden desde muebles para el hogar hasta proyectos de mayor escala (iglesias, cabañas turísticas y acabados para edificios).
 
 ---
