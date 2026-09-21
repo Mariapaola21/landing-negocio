@@ -263,3 +263,58 @@ descargue una extension tambien en google chrome.
 **Mañana arranco por**
 - Preparar la Agenda de Mentoría 2 (Día 10) y afinar detalles antes del congelamiento de código.
 
+
+
+## Día 10 — 19 de Septiembre de 2026
+
+**Horas efectivas:** 1 h (práctica: 0.5 h · teoría: 0.5 h · coach: 0 h)
+
+**Qué estudié**
+- Repaso de la lista de chequeo del Sprint 01 y preparación de dudas para la sesión de mentoría.
+
+**Qué construí**
+- Preparación del prototipo funcional para la revisión.
+- *Nota sobre mentoría:* La sesión de mentoría 2 prevista para hoy no se realizó y fue aplazada por la organización para el Día 12.
+
+**En qué me atasqué y cómo salí**
+- Sin bloqueos técnicos hoy.
+
+**Uso de IA hoy**
+- Ninguno por hoy.
+
+**Lo que hoy no entendí y voy a llevar a la mentoría**
+- Dudas para la sesión reprogramada del Día 12.
+
+**Mañana arranco por**
+- Ajustar la documentación del README y pulir el botón de contacto de WhatsApp.
+
+
+
+## Día 11 — 20 de Septiembre de 2026
+
+**Horas efectivas:** 3 h (práctica: 2 h · teoría: 0.5 h · coach: 0.5 h)
+
+**Qué estudié**
+- Revisión de la documentación técnica y comercial del proyecto (`README.md`, `negocio.md`).
+- Implementación de mensajes predeterminados para enlaces de conversión a WhatsApp y mensajes emergentes (*tooltips*) con CSS nativo (`::before` / `::after`).
+
+**Qué construí**
+- Reestructuración y redacción profesional del archivo `README.md` detallando qué es el proyecto, para quién es, cómo correrlo localmente, capturas de pantalla del catálogo y resumen de decisiones técnicas tomadas.
+- Integración de mensaje emergente predeterminado en CSS para el botón de WhatsApp (`.whatsapp-float::before`) y estandarización del número directo de cotización.
+
+**En qué me atasqué y cómo salí**
+- Dudas sobre cómo funcionaba el mensaje predeterminado para WhatsApp tanto a nivel de parámetro URL (`?text=...`) como a nivel visual en la landing web con CSS; resuelto separando la función del enlace HTML de la animación del tooltip emergente en CSS.
+
+**Uso de IA hoy**
+
+ Cómo hacer un mensaje predeterminado para WhatsApp Configuré el enlace `wa.me` con `?text=` en HTML y diseñé el tooltip emergente animado con `::before` y `::after` en `styles.css`  Sí, me quedó claro cómo funciona el parámetro de URL y el pseudoelemento en CSS y pedi
+ Ayuda para mejorar la redacción y orden del `README.md` Reorganicé las secciones sobre el proyecto, usuario objetivo, cómo correrlo localmente, capturas y decisiones tomadas  Sí, el README quedó ordenado, profesional y estructurado con markdown 
+ 
+**Lo que hoy no entendí y voy a llevar a la mentoría**
+- Ninguno por hoy.
+
+**Mañana arranco por**
+- Día 12: Mentoría 2 reprogramada y ensayo del simulacro para el Día de la Demo (pitch de presentación, recorrido del sitio y defensa de decisiones técnicas).
+
+
+

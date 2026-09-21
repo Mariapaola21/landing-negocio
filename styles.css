@@ -955,6 +955,49 @@ textarea:focus-visible {
     animation: float-pulse 2s infinite;
 }
 
+/* Tooltip / Mensaje predeterminado visible en CSS al pasar el cursor o enfocar */
+.whatsapp-float::before {
+    content: "¡Cotiza por WhatsApp!";
+    position: absolute;
+    right: 68px;
+    background-color: #2C3E50;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px);
+    pointer-events: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-float::after {
+    content: "";
+    position: absolute;
+    right: 58px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #2C3E50;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateX(10px);
+    pointer-events: none;
+}
+
+.whatsapp-float:hover::before,
+.whatsapp-float:focus-visible::before,
+.whatsapp-float:hover::after,
+.whatsapp-float:focus-visible::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+
 .whatsapp-float svg {
     width: 28px;
     height: 28px;
